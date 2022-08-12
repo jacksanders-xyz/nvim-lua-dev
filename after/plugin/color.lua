@@ -1,0 +1,6 @@
+require('colorbuddy').colorscheme('gruvbuddy')
+
+
+
+
+
