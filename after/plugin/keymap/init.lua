@@ -18,6 +18,9 @@ local nmap = Remap.nmap
 -- nnoremap <leader>fr :call VisualFindAndReplace()<CR>
 -- xnoremap <leader>fr :call VisualFindAndReplaceWithSelection()<CR>
 
+
+-- BASIC REMAPS
+
 -- GOYO
 --let g:goyo_width=90
 nnoremap("<leader>m", ":Goyo<cr>")
@@ -35,8 +38,8 @@ nnoremap("<silent><leader>N", ":bN!<CR>")
 nnoremap("<leader>.", "@:")
 
 -- YANK/PUT FROM/TO CLIPBOARD
-vnoremap('<leader>y', '*y"')
-nmap('<leader>p', '*P"')
+vnoremap('<leader>y', '"*y')
+nnoremap('<leader>p', '"*P')
 inoremap('<c-p>', '<ESC>*Pi"')
 
 -- MAKE Y BEHAVE LIKE ALL THE OTHER CAPITAL LETTERS
