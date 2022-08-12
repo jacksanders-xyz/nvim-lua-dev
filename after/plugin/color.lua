@@ -5,5 +5,7 @@ function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = 'hard'
     vim.g['airline#extensions#tabline#left_sep'] = ' '
     vim.g['airline#extensions#tabline#left_alt_sep'] = '|'
+    vim.opt.laststatus=3
+    vim.api.nvim_set_hl(0, "WinSeparator", {bg='NONE'})
 end
 ColorMyPencils()
