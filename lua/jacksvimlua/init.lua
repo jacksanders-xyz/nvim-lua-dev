@@ -17,3 +17,17 @@ if pcall(require, 'plenary') then
     return require(name)
   end
 end
+
+local augroup = vim.api.nvim_create_augroup
+JacksGroup = augroup('JacksGroup', {})
+local autocmd = vim.api.nvim_create_autocmd
+-- CLEANLINESS IS CLOSE TO GODLINESS
+autocmd({"BufWritePre"}, {
+    group = JacksGroup,
+    pattern = "*",
+    command = "%s/\\s\\+$//e",
+})
+
+vim.g.netrw_browse_split = 0
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 25
