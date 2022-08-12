@@ -26,13 +26,13 @@ local nmap = Remap.nmap
 nnoremap("<leader>m", ":Goyo<cr>")
 
 -- MAXIMIZER FOR VIMSPECTOR
-nnoremap("<leader>", "<cmd>MaximizerToggle!<CR>")
+nnoremap("<leader>,", "<cmd>MaximizerToggle!<CR>")
 
 -- BUFFER MANAGEMENT
-nnoremap("<silent><leader>x", ":bd<CR>")
-nnoremap("<silent><leader>X", ":bd!<CR>")
-nnoremap("<silent><leader>n", ":bn!<CR>")
-nnoremap("<silent><leader>N", ":bN!<CR>")
+nnoremap("<leader>x", "<cmd>bd<CR>")
+nnoremap("<leader>X", "<cmd>bd!<CR>")
+nnoremap("<leader>n", "<cmd>bn!<CR>")
+nnoremap("<leader>N", "<cmd>bN!<CR>")
 
 -- Repeat last ex command
 nnoremap("<leader>.", "@:")

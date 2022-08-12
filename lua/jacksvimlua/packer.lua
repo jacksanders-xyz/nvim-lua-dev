@@ -59,10 +59,10 @@ return require('packer').startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use 'nvim-treesitter/playground'
 
-    -- use 'Shougo/deoplete.nvim'
-    -- use 'deoplete-plugins/deoplete-go', { 'do': 'make'}
-    -- use {'Shougo/deoplete.nvim', 'run': ':UpdateRemotePlugins' }
-    -- use 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+    use 'Shougo/deoplete.nvim'
+    use { 'deoplete-plugins/deoplete-go', run = 'make' }
+    use { 'Shougo/deoplete.nvim', run = ':UpdateRemotePlugins' }
+    use { 'tbodt/deoplete-tabnine', run = './install.sh' }
 
     -- PRODUCTIVITY/VISUAL
     use 'sirVer/ultisnips'
@@ -83,7 +83,7 @@ return require('packer').startup(function(use)
     use 'osyo-manga/vim-over'
     use { 'darrikonn/vim-gofmt', run = ':GoUpdateBinaries' }
     use { 'deoplete-plugins/deoplete-go', run = 'make'}
-    --- use {'stamblerre/gocode', { rtp: 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }}
+    -- use {'stamblerre/gocode', rtp = 'vim', run = '~/.vim/plugged/gocode/vim/symlink.sh' }}
 
     -- VIM-BOXDRAW
     use 'gyim/vim-boxdraw'
