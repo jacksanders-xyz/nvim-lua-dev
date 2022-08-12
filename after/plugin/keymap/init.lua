@@ -9,11 +9,11 @@ local nmap = Remap.nmap
 -- FIND AND REPLACE
 -- function! VisualFindAndReplace()
 --     :OverCommandLine%s/
--- endfunction
+--
 -- 
 -- function! VisualFindAndReplaceWithSelection() range
 --     :'<,'>OverCommandLine s/
--- endfunction
+--
 -- 
 -- nnoremap <leader>fr :call VisualFindAndReplace()<CR>
 -- xnoremap <leader>fr :call VisualFindAndReplaceWithSelection()<CR>
@@ -22,8 +22,7 @@ local nmap = Remap.nmap
 -- BASIC REMAPS
 
 -- GOYO
---let g:goyo_width=90
-nnoremap("<leader>m", ":Goyo<cr>")
+--let g:goyo_width=90 nnoremap("<leader>m", ":Goyo<cr>")
 
 -- MAXIMIZER FOR VIMSPECTOR
 nnoremap("<leader>,", "<cmd>MaximizerToggle!<CR>")

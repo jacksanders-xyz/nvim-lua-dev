@@ -6,9 +6,6 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     
-    use 'tjdevries/colorbuddy.vim'
-    use 'tjdevries/gruvbuddy.nvim'
-
     -- T-POPE
     use 'tpope/vim-vinegar'
     use 'tpope/vim-fugitive'
@@ -59,8 +56,6 @@ return require('packer').startup(function(use)
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use 'nvim-treesitter/playground'
 
-    use 'Shougo/deoplete.nvim'
-    use { 'deoplete-plugins/deoplete-go', run = 'make' }
     use { 'Shougo/deoplete.nvim', run = ':UpdateRemotePlugins' }
     use { 'tbodt/deoplete-tabnine', run = './install.sh' }
 
@@ -75,7 +70,7 @@ return require('packer').startup(function(use)
     use 'vimwiki/vimwiki'
     use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview' }
 
-    -- -- FLOATTERM
+    -- FLOATTERM
     -- use 'voldikss/vim-floaterm'
 
     -- LANGS
@@ -88,7 +83,7 @@ return require('packer').startup(function(use)
     -- VIM-BOXDRAW
     use 'gyim/vim-boxdraw'
 
-    -- LIB-MODAL
+     -- LIB-MODAL
     use 'Iron-E/nvim-libmodal'
 
     -- COFFEE SCRIPT UNTIL TREE SITTER SUPPORTS
@@ -105,3 +100,4 @@ return require('packer').startup(function(use)
     use 'posva/vim-vue'
     use { 'kevinhwang91/rnvimr', run = 'make sync'}    
 end)
+

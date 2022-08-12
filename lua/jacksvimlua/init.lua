@@ -1,15 +1,8 @@
 require("jacksvimlua.sets")
 require("jacksvimlua.packer")
 require("jacksvimlua.remap-binder-helper")
-
-
-require("jacksvimlua.telescope")
-require("jacksvimlua.lsp")
-require("jacksvimlua.treesitter")
-require("jacksvimlua.libmodal")
-require("jacksvimlua.lsp-installer")
-require("jacksvimlua.ImagePathAutomator")
-require("jacksvimlua.nvim-docker")
+require("jacksvimlua.harpoon")
+require('jacksvimlua.treesitter')
 
 P = function(v)
   print(vim.inspect(v))
@@ -24,11 +17,4 @@ if pcall(require, 'plenary') then
     return require(name)
   end
 end
-
 -- AUTO GROUPS:
---
---
---
---
-
-
