@@ -6,23 +6,15 @@ local inoremap = Remap.inoremap
 local xnoremap = Remap.xnoremap
 local nmap = Remap.nmap
 
--- FIND AND REPLACE
--- function! VisualFindAndReplace()
---     :OverCommandLine%s/
---
--- 
--- function! VisualFindAndReplaceWithSelection() range
---     :'<,'>OverCommandLine s/
---
--- 
--- nnoremap <leader>fr :call VisualFindAndReplace()<CR>
--- xnoremap <leader>fr :call VisualFindAndReplaceWithSelection()<CR>
-
-
 -- BASIC REMAPS
 
+-- EASIER SEARCH AND REPLACE
+nnoremap("<leader>fr", ":%s/")
+xnoremap("<leader>fr", ":s/")
+
+
 -- GOYO
---let g:goyo_width=90 nnoremap("<leader>m", ":Goyo<cr>")
+nnoremap("<leader>m", ":Goyo<cr>")
 
 -- MAXIMIZER FOR VIMSPECTOR
 nnoremap("<leader>,", "<cmd>MaximizerToggle!<CR>")
